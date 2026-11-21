@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Под липите · Ресторант в София от 1926</title>
+<meta name="description" content="Ресторант „Под липите“ – сто години българска кухня в София. Продукти от собствена ферма, две градини, ул. „Елин Пелин“ 1.">
+<meta name="theme-color" content="#120d09">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="loader" aria-hidden="true">
+  <div class="loader-in">
+    <svg class="leaf-mark" viewBox="0 0 64 64"><path d="M32 6c10 6 22 14 22 28 0 12-10 20-22 24C20 54 10 46 10 34 10 20 22 12 32 6Z"/><path class="vein" d="M32 14v44M32 28l-10-8M32 28l10-8M32 40l-13-9M32 40l13-9"/></svg>
+    <p class="loader-year">1926</p>
+    <div class="loader-bar"><span></span></div>
+  </div>
+</div>
+
+<canvas class="leaves" aria-hidden="true"></canvas>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="nav">
+  <a class="brand" href="#top" aria-label="Под липите">
+    <svg class="leaf-mark" viewBox="0 0 64 64"><path d="M32 6c10 6 22 14 22 28 0 12-10 20-22 24C20 54 10 46 10 34 10 20 22 12 32 6Z"/><path class="vein" d="M32 14v44M32 28l-10-8M32 28l10-8M32 40l-13-9M32 40l13-9"/></svg>
+    <span><b data-i="brand">Под липите</b><i data-i="since">от 1926</i></span>
+  </a>
+  <nav class="nav-links">
+    <a href="#ferma" data-i="n_farm">Фермата</a>
+    <a href="#menu" data-i="n_menu">Меню</a>
+    <a href="#praznici" data-i="n_events">Празници</a>
+    <a href="#galeria" data-i="n_gallery">Галерия</a>
+    <a href="#kontakti" data-i="n_contact">Контакти</a>
+  </nav>
+  <div class="nav-right">
+    <button class="lang" type="button" aria-label="Language"><span data-l="bg" class="on">BG</span><span data-l="en">EN</span></button>
+    <a class="btn btn-sm" href="tel:+359886801227" data-i="reserve">Резервирай</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ ФИЛМ ============ -->
+<section class="film" aria-label="Сто години под липите">
+  <div class="film-stage">
+    <canvas class="film-canvas"></canvas>
+    <div class="film-shade"></div>
+
+    <div class="intro">
+      <p class="eyebrow" data-i="i_eyebrow">София · ул. „Елин Пелин“ 1</p>
+      <h1><span data-i="i_t1">Сто години</span><em data-i="i_t2">под липите</em></h1>
+      <p class="intro-years"><span>1926</span><i></i><span>2026</span></p>
+      <p class="scroll-hint"><span data-i="i_scroll">Скролни, за да влезеш</span><b></b></p>
+    </div>
+
+    <div class="chapters">
+      <article class="chapter" data-from="0.04" data-to="0.165">
+        <span class="ch-no">I</span>
+        <h2 data-i="c1_t">Портата е същата</h2>
+        <p data-i="c1_p">От 1926 година на този ъгъл в Лозенец се сяда под липите.</p>
+      </article>
+      <article class="chapter" data-from="0.215" data-to="0.35">
+        <span class="ch-no">II</span>
+        <h2 data-i="c2_t">Къщата</h2>
+        <p data-i="c2_p">Греди, черги и огнище. Нищо тук не е декор.</p>
+      </article>
+      <article class="chapter" data-from="0.40" data-to="0.54">
+        <span class="ch-no">III</span>
+        <h2 data-i="c3_t">Нашата ферма</h2>
+        <p data-i="c3_p">Почти всичко, което влиза в кухнята, го отглеждаме сами.</p>
+      </article>
+      <article class="chapter" data-from="0.59" data-to="0.725">
+        <span class="ch-no">IV</span>
+        <h2 data-i="c4_t">Огънят</h2>
+        <p data-i="c4_p">Сачът идва на масата още цвърчащ.</p>
+      </article>
+      <article class="chapter" data-from="0.775" data-to="0.895">
+        <span class="ch-no">V</span>
+        <h2 data-i="c5_t">Трапезата</h2>
+        <p data-i="c5_p">Домашна луканка, пастърма, питка от пещта.</p>
+      </article>
+    </div>
+
+    <div class="film-end">
+      <p class="eyebrow" data-i="e_eyebrow">Всеки ден · 12:00 – 23:00</p>
+      <h2 data-i="e_t">Масата ви чака</h2>
+      <a class="btn" href="tel:+359886801227"><span data-i="e_call">Обади се за резервация</span></a>
+    </div>
+
+    <div class="film-rail" aria-hidden="true">
+      <b class="rail-year">1926</b>
+      <div class="rail-track"><span></span><i></i><i></i><i></i><i></i></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ЧИСЛА ============ -->
+<section class="stats">
+  <div class="wrap stats-grid">
+    <div class="stat"><b data-count="100">0</b><span data-i="s1">години история</span></div>
+    <div class="stat"><b data-count="100">0</b><span data-i="s2">места в двете градини</span></div>
+    <div class="stat"><b data-count="28">0</b><span data-i="s3">места на терасата</span></div>
+    <div class="stat"><b data-count="7">0</b><span data-i="s4">дни в седмицата</span></div>
+  </div>
+</section>
+
+<!-- ============ ФЕРМАТА ============ -->
+<section class="farm" id="ferma">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="eyebrow" data-i="f_eyebrow">Фермата</p>
+      <h2 class="reveal" data-i="f_title">От нивата до масата няма посредници</h2>
+      <p class="lead reveal" data-i="f_lead">Отглеждаме почти всички продукти, които влизат в кухнята. Затова вкусът е един и същ от десетилетия.</p>
+    </header>
+
+    <div class="farm-flow">
+      <svg class="farm-line" viewBox="0 0 100 1000" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M50 0 C 20 160, 80 320, 50 500 S 20 840, 50 1000"/></svg>
+
+      <article class="farm-row">
+        <figure class="ph tilt"><img data-ph="152_Pod_lipite_farm_thumb.jpg" alt="" loading="lazy"></figure>
+        <div class="farm-text reveal">
+          <span class="ch-no">01</span>
+          <h3 data-i="f1_t">Зърното</h3>
+          <p data-i="f1_p">Пшеница, лимец, ечемик, просо, царевица, овес. От тях мелим брашното за питките на пещ, за сладките и солените баници.</p>
+        </div>
+      </article>
+
+      <article class="farm-row flip">
+        <figure class="ph tilt"><img data-ph="95_Pod_lipite_s2_IMG_6204_thumb.jpg" alt="" loading="lazy"></figure>
+        <div class="farm-text reveal">
+          <span class="ch-no">02</span>
+          <h3 data-i="f2_t">Млякото</h3>
+          <p data-i="f2_p">Сертифицирано био прясно мляко. От него правим домашното кисело мляко, сиренето и кашкавала.</p>
+        </div>
+      </article>
+
+      <article class="farm-row">
+        <figure class="ph tilt"><img data-ph="94_Pod_lipite_s2_IMG_6027_thumb.jpg" alt="" loading="lazy"></figure>
+        <div class="farm-text reveal">
+          <span class="ch-no">03</span>
+          <h3 data-i="f3_t">Месото</h3>
+          <p data-i="f3_p">Месото, каймата и колбасите са наше производство: луканка, пастърма, суджук.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ МЕНЮ ============ -->
+<section class="menu" id="menu">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="eyebrow" data-i="m_eyebrow">Меню</p>
+      <h2 class="reveal" data-i="m_title">Истинският вкус на българската кухня</h2>
+    </header>
+    <div class="menu-tabs" role="tablist"></div>
+    <div class="menu-body">
+      <figure class="menu-photo ph tilt"><img data-ph="124_Pod_lipite_s2_IMG_5948.jpg" alt="" loading="lazy"><figcaption></figcaption></figure>
+      <ul class="menu-list"></ul>
+    </div>
+    <p class="menu-note" data-i="m_note">Цените са в евро. Грамажите са за една порция.</p>
+  </div>
+</section>
+
+<!-- ============ ПРАЗНИЦИ ============ -->
+<section class="events" id="praznici">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="eyebrow" data-i="ev_eyebrow">Празници</p>
+      <h2 class="reveal" data-i="ev_title">Големите дни се помнят с трапезата</h2>
+    </header>
+    <div class="events-grid">
+      <a class="event" href="tel:+359886801227"><img data-ph="97_Pod_lipite_s2_IMG_6217_thumb.jpg" alt="" loading="lazy"><div><h3 data-i="ev1_t">Сватби</h3><p data-i="ev1_p">По български обичай, с музика и хоро.</p></div></a>
+      <a class="event" href="tel:+359886801227"><img data-ph="98_Pod_lipite_s2_IMG_5958_thumb.jpg" alt="" loading="lazy"><div><h3 data-i="ev2_t">Кръщенета</h3><p data-i="ev2_p">Празник за цялата рода.</p></div></a>
+      <a class="event" href="tel:+359886801227"><img data-ph="100_Pod_lipite_s2_IMG_6163.jpg" alt="" loading="lazy"><div><h3 data-i="ev3_t">Фирмени банкети</h3><p data-i="ev3_p">Бизнес вечери в бохемска обстановка.</p></div></a>
+      <a class="event" href="tel:+359886801227"><img data-ph="99_Pod_lipite_s2_IMG_5997_thumb.jpg" alt="" loading="lazy"><div><h3 data-i="ev4_t">Семейни празници</h3><p data-i="ev4_p">Рождени и имени дни, годишнини.</p></div></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ГАЛЕРИЯ ============ -->
+<section class="gallery" id="galeria">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="eyebrow" data-i="g_eyebrow">Галерия</p>
+      <h2 class="reveal" data-i="g_title">Съхранени моменти от нашия бележник</h2>
+    </header>
+    <div class="gallery-grid"></div>
+  </div>
+</section>
+
+<!-- ============ КОНТАКТИ ============ -->
+<section class="contact" id="kontakti">
+  <div class="wrap contact-grid">
+    <div class="contact-info">
+      <p class="eyebrow" data-i="k_eyebrow">Контакти</p>
+      <h2 class="reveal" data-i="k_title">Заповядайте</h2>
+      <p class="open-now"><i></i><span></span></p>
+      <dl>
+        <dt data-i="k_addr_l">Адрес</dt>
+        <dd><a href="https://www.google.com/maps/search/?api=1&query=42.681768,23.333299" target="_blank" rel="noopener" data-i="k_addr">София 1164, ул. „Елин Пелин“ 1</a></dd>
+        <dt data-i="k_hours_l">Работно време</dt>
+        <dd data-i="k_hours">Понеделник – неделя, 12:00 – 23:00</dd>
+        <dt data-i="k_phone_l">Резервации</dt>
+        <dd><a href="tel:+35928665053">02 866 5053</a><br><a href="tel:+359886801227">0886 801 227</a></dd>
+      </dl>
+      <div class="contact-cta">
+        <a class="btn" href="tel:+359886801227"><span data-i="e_call">Обади се за резервация</span></a>
+        <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&destination=42.681768,23.333299" target="_blank" rel="noopener" data-i="k_route">Как да стигна</a>
+      </div>
+    </div>
+    <div class="map">
+      <iframe title="Карта" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=42.681768,23.333299&z=16&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div class="foot-brand"><b data-i="brand">Под липите</b><span data-i="tagline">Традиция с история от 1926</span></div>
+    <div class="foot-links">
+      <a href="https://www.facebook.com/%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%82-%D0%9F%D0%9E%D0%94%D0%AC-%D0%9B%D0%B8%D0%BF%D0%B8%D1%82%D0%B5-409030882566579/" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.tripadvisor.com/Restaurant_Review-g294452-d941696-Reviews-Pod_Lipite-Sofia_Sofia_Region.html" target="_blank" rel="noopener">Tripadvisor</a>
+    </div>
+    <p class="foot-note" data-i="foot_note">Концептуален проект. Снимки и съдържание: ресторант „Под липите“.</p>
+  </div>
+</footer>
+
+<div class="lightbox" hidden><button type="button" aria-label="Затвори">×</button><img alt=""></div>
+
+<a class="fab" href="tel:+359886801227" aria-label="Резервация"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.6 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.6 3.6a1 1 0 0 1-.25 1Z"/></svg></a>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
